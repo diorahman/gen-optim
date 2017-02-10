@@ -31,6 +31,7 @@ console.log('RESULT', result)
 By using this module,
 
 ```js
+const optimize = require('gen-optim')
 const src = fs.readFileSync('./index.js', 'utf8')
 const compiled = compile(src).toString()
 const optimized = optimize(compiled).toString()
